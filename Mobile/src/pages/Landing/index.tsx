@@ -38,7 +38,7 @@ export default function Landing() {
                 <Search />
             </View>
 
-            <View>
+            <View style={styles.lastTripContainer}>
                 <LastTrip />
             </View>
 
@@ -84,4 +84,10 @@ const styles = StyleSheet.create({
 
     searchContainer: {
     },
+
+    lastTripContainer: {
+        justifyContent: 'center',
+        padding: 20,
+        top: 120,
+    }
 })

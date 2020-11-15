@@ -1,9 +1,13 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 
+import clockImg from '../../images/Relogio.png';
+
 export default function LastTrip() {
     return (
         <View style={styles.container}>
+            <Image source={clockImg} />
+            
             <Text style={styles.locationButton}>
                 Caixa Ecônimica Federal
             </Text>
@@ -16,10 +20,15 @@ export default function LastTrip() {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
     },
 
-    locationButton: {},
+    locationButton: {
+        fontSize: 20,
+        paddingEnd: 10
+    },
 
-    addressButton: {}
+    addressButton: {
+        fontSize: 15
+    },
 })
