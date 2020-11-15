@@ -57,7 +57,6 @@ export default function Landing() {
             <View style={styles.lastTripContainer2}>
                 <LastTrip />
             </View>
-
         </View>
     )
 }
