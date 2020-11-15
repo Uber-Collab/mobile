@@ -6,7 +6,7 @@ import clockImg from '../../images/Relogio.png';
 export default function LastTrip() {
     return (
         <View style={styles.container}>
-            <Image source={clockImg} />
+            <Image source={clockImg} style={styles.clockImg} />
             
             <Text style={styles.locationButton}>
                 Caixa Ecônimica Federal
@@ -21,6 +21,12 @@ export default function LastTrip() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        top: 90,
+    },
+
+    clockImg: {
+        right: 56,
+        top: 45
     },
 
     locationButton: {
