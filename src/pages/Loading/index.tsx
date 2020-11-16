@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { View, Image, StyleSheet } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import LogoImg from '../../images/Logo.png';
 
 export default function AppLoading() {
+    const navigation = useNavigation();
+
+    useEffect(() => {
+        setTimeout(() => {
+            navigation.navigate('Landing')
+        }, 3000)
+    })
+
     return (
         <View style={styles.container}>
             <Image source={LogoImg} />
