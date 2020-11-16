@@ -10,7 +10,8 @@ import titleImg from '../../images/title.png';
 import descriptionImg from '../../images/description.png';
 
 import viagemImg from '../../images/Viagem.png';
-import uberCollabImg from '../../images/Carro.png';
+import uberCollabImg from '../../images/UberCollab.png';
+import uberCollegeImg from '../../images/UberCollege.png';
 import deliveryImg from '../../images/Delivery.png';
 
 import Search from '../../components/Search/index';
@@ -40,6 +41,10 @@ export default function Landing() {
 
                 <RectButton style={styles.uberCollabButton} onPress={navigateToLogin}>
                     <Image source={uberCollabImg} />
+                </RectButton>
+
+                <RectButton style={styles.uberCollegeButton}>
+                    <Image source={uberCollegeImg} />
                 </RectButton>
 
                 <RectButton style={styles.deliveryButton}>
@@ -93,18 +98,23 @@ const styles = StyleSheet.create({
     buttonContainer: {
         flexDirection: 'row',
         justifyContent: 'center',
+        marginTop: 15
     },
 
     tripButton: {
-        padding: 20
+        padding: 10
     },
 
     uberCollabButton: {
-        padding: 20
+        padding: 10
+    },
+
+    uberCollegeButton: {
+        padding: 10
     },
 
     deliveryButton: {
-        padding: 20
+        padding: 10
     },
 
     searchContainer: {
