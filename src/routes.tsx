@@ -13,10 +13,7 @@ export default function Routes() {
     return (
         <NavigationContainer>
             <Navigator screenOptions={{ headerShown: false }}>
-                <Screen 
-                    name="Trip"
-                    component={Trip}
-                />
+                
                 <Screen 
                     name="Landing"
                     component={Landing}
@@ -28,6 +25,10 @@ export default function Routes() {
                 <Screen 
                     name="Loading"
                     component={Loading}
+                />
+                <Screen 
+                    name="Trip"
+                    component={Trip}
                 />
             </Navigator>
         </NavigationContainer>
