@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Landing from './pages/Landing/index';
 import LoginUberCollab from './pages/LoginUberCollab/index';
 import Loading from './pages/Loading/index';
+import Trip from './pages/Trip/index';
 
 const { Navigator, Screen } = createStackNavigator()
 
@@ -12,6 +13,7 @@ export default function Routes() {
     return (
         <NavigationContainer>
             <Navigator screenOptions={{ headerShown: false }}>
+                
                 <Screen 
                     name="Landing"
                     component={Landing}
@@ -23,6 +25,10 @@ export default function Routes() {
                 <Screen 
                     name="Loading"
                     component={Loading}
+                />
+                <Screen 
+                    name="Trip"
+                    component={Trip}
                 />
             </Navigator>
         </NavigationContainer>

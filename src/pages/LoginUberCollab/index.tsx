@@ -5,9 +5,11 @@ export default function LoginUberCollab() {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>
-                Menos trânsito {"\n"}
-                Mais mobilidade {"\n"}
+                {`
+                Menos trânsito & \n
+                Mais mobilidade & \n
                 Menos stress
+                `}
             </Text>
 
             <Text>CPF</Text>
