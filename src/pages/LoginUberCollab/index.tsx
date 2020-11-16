@@ -33,7 +33,7 @@ export default function LoginUberCollab() {
             <Text style={styles.cpfText}>CPF</Text>
             <TextInput style={styles.insertCpf} autoFocus></TextInput>
 
-            <RectButton style={styles.continueButton} onPress={navigation.navigate('Trip')}>
+            <RectButton style={styles.continueButton} onPress={navigateToUberCollabInterface}>
                 <Text style={styles.textButton}>Continue</Text>
             </RectButton>
         </View>

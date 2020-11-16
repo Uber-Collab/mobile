@@ -9,7 +9,7 @@ export default function AppLoading() {
 
     useEffect(() => {
         setTimeout(() => {
-            navigation.navigate('Landing')
+            navigation.navigate('Trip')
         }, 3000)
     })
 
